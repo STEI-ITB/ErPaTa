@@ -1,0 +1,45 @@
+{
+    "flow": [
+        {
+            "flow-name": "FlowARP3",
+            "id": 103,
+            "instructions": {
+                "instruction": [
+                    {
+                        "go-to-table": {
+                            "table_id": 20
+                        },
+                        "order": 0
+                    },
+                    {
+                        "apply-actions": {
+                            "action": [
+                                {
+                                    "order": 0,
+                                    "set-dl-src-action": {
+                                        "address": "ba:b2:3e:07:58:78"
+                                    }
+                                },
+                                {
+                                    "dec-nw-ttl": {},
+                                    "order": 1
+                                }
+                            ]
+                        },
+                        "order": 1
+                    }
+                ]
+            },
+            "match": {
+                "ethernet-match": {
+                    "ethernet-type": {
+                        "type": 2048
+                    }
+                },
+                "ipv4-destination": "20.0.0.4/32"
+            },
+            "priority": 10,
+            "table_id": 1
+        }
+    ]
+}

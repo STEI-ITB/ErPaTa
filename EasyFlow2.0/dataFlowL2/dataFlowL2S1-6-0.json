@@ -1,0 +1,29 @@
+{
+    "flow": [
+        {
+            "flow-name": "FlowL2",
+            "id": 5,
+            "instructions": {
+                "instruction": [
+                    {
+                        "go-to-table": {
+                            "table_id": 20
+                        },
+                        "order": 0
+                    }
+                ]
+            },
+            "match": {
+                "ethernet-match": {
+                    "ethernet-type": {
+                        "type": 2048
+                    }
+                },
+                "ipv4-destination": "10.0.0.0/24",
+                "ipv4-source": "10.0.0.0/24"
+            },
+            "priority": 50,
+            "table_id": 1
+        }
+    ]
+}

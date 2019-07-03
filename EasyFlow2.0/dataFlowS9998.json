@@ -1,0 +1,28 @@
+{
+    "flow": [
+        {
+            "flow-name": "FlowS", 
+            "id": 9998, 
+            "instructions": {
+                "instruction": [
+                    {
+                        "go-to-table": {
+                            "table_id": 30
+                        },
+                        "order": 0
+                    }
+                ]
+            }, 
+            "match": {
+			    "arp-op": "2",
+                "ethernet-match": {
+                    "ethernet-type": {
+                        "type": 2054
+                    }
+                }
+            }, 
+            "priority": 1, 
+            "table_id": 1
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "network-topology:termination-point": [
+        {
+            "ovsdb:name": "ge-1/1/1",
+            "ovsdb:ofport": "1",
+            "tp-id": "ge-1/1/1"
+        }
+    ]
+}

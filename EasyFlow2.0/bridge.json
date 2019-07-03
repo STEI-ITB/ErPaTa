@@ -1,0 +1,19 @@
+{
+    "network-topology:node": [
+        {
+            "node-id": "ovsdb://uuid/2d6db786-0708-4110-8ab2-c89d388004fe/bridge/eric",
+            "ovsdb:bridge-name": "eric",
+            "ovsdb:controller-entry": [
+                {
+                    "target": "tcp:10.10.1.10:6633"
+                }
+            ],
+            "ovsdb:managed-by": "/network-topology:network-topology/network-topology:topology[network-topology:topology-id='ovsdb:1']/network-topology:node[network-topology:node-id='ovsdb://uuid/2d6db786-0708-4110-8ab2-c89d388004fe']",
+            "ovsdb:protocol-entry": [
+                {
+                    "protocol": "ovsdb:ovsdb-bridge-protocol-openflow-13"
+                }
+            ]
+        }
+    ]
+}

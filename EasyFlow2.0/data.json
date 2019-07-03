@@ -1,0 +1,7 @@
+{
+    "topology": [
+        {
+            "topology-id": "ovsdb:1"
+        }
+    ]
+}

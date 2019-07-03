@@ -1,0 +1,27 @@
+{
+    "flow": [
+        {
+            "flow-name": "FlowS",
+            "id": 4,
+            "instructions": {
+                "instruction": [
+                    {
+                        "go-to-table": {
+                            "table_id": 1
+                        },
+                        "order": 0
+                    }
+                ]
+            },
+            "match": {
+                "ethernet-match": {
+                    "ethernet-source": {
+                        "address": "00:00:00:00:00:01"
+                    }
+                }
+            },
+            "priority": 100,
+            "table_id": 0
+        }
+    ]
+}

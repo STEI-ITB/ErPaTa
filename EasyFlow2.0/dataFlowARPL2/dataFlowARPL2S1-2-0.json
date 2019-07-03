@@ -1,0 +1,34 @@
+{
+    "flow": [
+        {
+            "flow-name": "FlowARPL2",
+            "id": 2,
+            "instructions": {
+                "instruction": [
+                    {
+                        "apply-actions": {
+                            "action": [
+                                {
+                                    "order": 0,
+                                    "output-action": {
+                                        "output-node-connector": 3
+                                    }
+                                }
+                            ]
+                        },
+                        "order": 0
+                    }
+                ]
+            },
+            "match": {
+                "ethernet-match": {
+                    "ethernet-destination": {
+                        "address": "00:00:00:00:00:03"
+                    }
+                }
+            },
+            "priority": 100,
+            "table_id": 30
+        }
+    ]
+}

@@ -1,0 +1,1924 @@
+{
+    "node": [
+        {
+            "flow-node-inventory:description": "aruba1",
+            "flow-node-inventory:hardware": "2920-24G Switch",
+            "flow-node-inventory:ip-address": "10.10.5.91",
+            "flow-node-inventory:manufacturer": "HP",
+            "flow-node-inventory:serial-number": "SG74FLW0HR",
+            "flow-node-inventory:software": "WB.16.02.0012",
+            "flow-node-inventory:switch-features": {
+                "capabilities": [
+                    "flow-node-inventory:flow-feature-capability-flow-stats",
+                    "flow-node-inventory:flow-feature-capability-port-stats",
+                    "flow-node-inventory:flow-feature-capability-port-blocked",
+                    "flow-node-inventory:flow-feature-capability-table-stats",
+                    "flow-node-inventory:flow-feature-capability-group-stats"
+                ],
+                "max_buffers": 0,
+                "max_tables": 3
+            },
+            "flow-node-inventory:table": [
+                {
+                    "flow": [
+                        {
+                            "cookie": 0,
+                            "flags": "",
+                            "hard-timeout": 0,
+                            "id": "#UF$TABLE*0-8",
+                            "idle-timeout": 0,
+                            "instructions": {
+                                "instruction": [
+                                    {
+                                        "go-to-table": {
+                                            "table_id": 100
+                                        },
+                                        "order": 0
+                                    }
+                                ]
+                            },
+                            "match": {},
+                            "opendaylight-flow-statistics:flow-statistics": {
+                                "byte-count": 0,
+                                "duration": {
+                                    "nanosecond": 198000000,
+                                    "second": 16
+                                },
+                                "packet-count": 0
+                            },
+                            "priority": 0,
+                            "table_id": 0
+                        }
+                    ],
+                    "flow-hash-id-map": [
+                        {
+                            "flow-id": "#UF$TABLE*0-8",
+                            "hash": "Match [augmentation=[]]00"
+                        }
+                    ],
+                    "id": 0,
+                    "opendaylight-flow-table-statistics:flow-table-statistics": {
+                        "active-flows": 1,
+                        "packets-looked-up": 0,
+                        "packets-matched": 0
+                    },
+                    "table-features": [
+                        {
+                            "config": "DEPRECATED-MASK",
+                            "max-entries": 1,
+                            "metadata-match": 0,
+                            "metadata-write": 0,
+                            "name": "Start",
+                            "table-id": 0,
+                            "table-properties": {
+                                "table-feature-properties": [
+                                    {
+                                        "order": 4,
+                                        "write-actions": {}
+                                    },
+                                    {
+                                        "order": 5,
+                                        "write-actions-miss": {}
+                                    },
+                                    {
+                                        "apply-actions": {},
+                                        "order": 6
+                                    },
+                                    {
+                                        "apply-actions-miss": {},
+                                        "order": 7
+                                    },
+                                    {
+                                        "match-setfield": {},
+                                        "order": 8
+                                    },
+                                    {
+                                        "order": 9,
+                                        "wildcard-setfield": {}
+                                    },
+                                    {
+                                        "order": 10,
+                                        "write-setfield": {}
+                                    },
+                                    {
+                                        "order": 11,
+                                        "write-setfield-miss": {}
+                                    },
+                                    {
+                                        "apply-setfield": {},
+                                        "order": 12
+                                    },
+                                    {
+                                        "apply-setfield-miss": {},
+                                        "order": 13
+                                    },
+                                    {
+                                        "instructions": {},
+                                        "order": 0
+                                    },
+                                    {
+                                        "instructions-miss": {
+                                            "instruction": [
+                                                {
+                                                    "go-to-table": {},
+                                                    "order": 0
+                                                }
+                                            ]
+                                        },
+                                        "order": 1
+                                    },
+                                    {
+                                        "order": 2,
+                                        "tables": {
+                                            "table-ids": [
+                                                100
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "order": 3,
+                                        "tables-miss": {
+                                            "table-ids": [
+                                                100
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "flow": [
+                        {
+                            "cookie": 0,
+                            "flags": "",
+                            "hard-timeout": 0,
+                            "id": "#UF$TABLE*200-10",
+                            "idle-timeout": 0,
+                            "match": {},
+                            "opendaylight-flow-statistics:flow-statistics": {
+                                "byte-count": 0,
+                                "duration": {
+                                    "nanosecond": 198000000,
+                                    "second": 16
+                                },
+                                "packet-count": 0
+                            },
+                            "priority": 0,
+                            "table_id": 200
+                        }
+                    ],
+                    "flow-hash-id-map": [
+                        {
+                            "flow-id": "#UF$TABLE*200-10",
+                            "hash": "Match [augmentation=[]]00"
+                        }
+                    ],
+                    "id": 200,
+                    "opendaylight-flow-table-statistics:flow-table-statistics": {
+                        "active-flows": 1,
+                        "packets-looked-up": 0,
+                        "packets-matched": 0
+                    },
+                    "table-features": [
+                        {
+                            "config": "DEPRECATED-MASK",
+                            "max-entries": 16000,
+                            "metadata-match": 0,
+                            "metadata-write": 0,
+                            "name": "SW Table 1",
+                            "table-id": 200,
+                            "table-properties": {
+                                "table-feature-properties": [
+                                    {
+                                        "order": 4,
+                                        "write-actions": {
+                                            "action": [
+                                                {
+                                                    "group-action": {},
+                                                    "order": 3
+                                                },
+                                                {
+                                                    "order": 4,
+                                                    "set-nw-ttl-action": {}
+                                                },
+                                                {
+                                                    "dec-nw-ttl": {},
+                                                    "order": 5
+                                                },
+                                                {
+                                                    "order": 6,
+                                                    "set-field": {}
+                                                },
+                                                {
+                                                    "order": 0,
+                                                    "output-action": {}
+                                                },
+                                                {
+                                                    "copy-ttl-out": {},
+                                                    "order": 1
+                                                },
+                                                {
+                                                    "copy-ttl-in": {},
+                                                    "order": 2
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "order": 5,
+                                        "write-actions-miss": {
+                                            "action": [
+                                                {
+                                                    "group-action": {},
+                                                    "order": 3
+                                                },
+                                                {
+                                                    "order": 4,
+                                                    "set-nw-ttl-action": {}
+                                                },
+                                                {
+                                                    "dec-nw-ttl": {},
+                                                    "order": 5
+                                                },
+                                                {
+                                                    "order": 6,
+                                                    "set-field": {}
+                                                },
+                                                {
+                                                    "order": 0,
+                                                    "output-action": {}
+                                                },
+                                                {
+                                                    "copy-ttl-out": {},
+                                                    "order": 1
+                                                },
+                                                {
+                                                    "copy-ttl-in": {},
+                                                    "order": 2
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "apply-actions": {
+                                            "action": [
+                                                {
+                                                    "group-action": {},
+                                                    "order": 3
+                                                },
+                                                {
+                                                    "order": 4,
+                                                    "set-nw-ttl-action": {}
+                                                },
+                                                {
+                                                    "dec-nw-ttl": {},
+                                                    "order": 5
+                                                },
+                                                {
+                                                    "order": 6,
+                                                    "set-field": {}
+                                                },
+                                                {
+                                                    "order": 0,
+                                                    "output-action": {}
+                                                },
+                                                {
+                                                    "copy-ttl-out": {},
+                                                    "order": 1
+                                                },
+                                                {
+                                                    "copy-ttl-in": {},
+                                                    "order": 2
+                                                }
+                                            ]
+                                        },
+                                        "order": 6
+                                    },
+                                    {
+                                        "apply-actions-miss": {
+                                            "action": [
+                                                {
+                                                    "group-action": {},
+                                                    "order": 3
+                                                },
+                                                {
+                                                    "order": 4,
+                                                    "set-nw-ttl-action": {}
+                                                },
+                                                {
+                                                    "dec-nw-ttl": {},
+                                                    "order": 5
+                                                },
+                                                {
+                                                    "order": 6,
+                                                    "set-field": {}
+                                                },
+                                                {
+                                                    "order": 0,
+                                                    "output-action": {}
+                                                },
+                                                {
+                                                    "copy-ttl-out": {},
+                                                    "order": 1
+                                                },
+                                                {
+                                                    "copy-ttl-in": {},
+                                                    "order": 2
+                                                }
+                                            ]
+                                        },
+                                        "order": 7
+                                    },
+                                    {
+                                        "match-setfield": {
+                                            "set-field-match": [
+                                                {
+                                                    "has-mask": false,
+                                                    "match-type": "opendaylight-table-types:in_port"
+                                                },
+                                                {
+                                                    "has-mask": false,
+                                                    "match-type": "opendaylight-table-types:vlan_vid"
+                                                },
+                                                {
+                                                    "has-mask": false,
+                                                    "match-type": "opendaylight-table-types:ip_dscp"
+                                                },
+                                                {
+                                                    "has-mask": false,
+                                                    "match-type": "opendaylight-table-types:ipv6_nd_sll"
+                                                },
+                                                {
+                                                    "has-mask": false,
+                                                    "match-type": "opendaylight-table-types:vlan_pcp"
+                                                },
+                                                {
+                                                    "has-mask": true,
+                                                    "match-type": "opendaylight-table-types:ipv6_flabel"
+                                                },
+                                                {
+                                                    "has-mask": false,
+                                                    "match-type": "opendaylight-table-types:ipv6_nd_target"
+                                                },
+                                                {
+                                                    "has-mask": true,
+                                                    "match-type": "opendaylight-table-types:eth_dst"
+                                                },
+                                                {
+                                                    "has-mask": false,
+                                                    "match-type": "opendaylight-table-types:icmpv4_type"
+                                                },
+                                                {
+                                                    "has-mask": false,
+                                                    "match-type": "opendaylight-table-types:icmpv6_code"
+                                                },
+                                                {
+                                                    "has-mask": false,
+                                                    "match-type": "opendaylight-table-types:icmpv6_type"
+                                                },
+                                                {
+                                                    "has-mask": true,
+                                                    "match-type": "opendaylight-table-types:eth_src"
+                                                },
+                                                {
+                                                    "has-mask": true,
+                                                    "match-type": "opendaylight-table-types:arp_spa"
+                                                },
+                                                {
+                                                    "has-mask": false,
+                                                    "match-type": "opendaylight-table-types:ipv6_nd_tll"
+                                                },
+                                                {
+                                                    "has-mask": true,
+                                                    "match-type": "opendaylight-table-types:ipv4_src"
+                                                },
+                                                {
+                                                    "has-mask": false,
+                                                    "match-type": "opendaylight-table-types:tcp_src"
+                                                },
+                                                {
+                                                    "has-mask": false,
+                                                    "match-type": "opendaylight-table-types:arp_sha"
+                                                },
+                                                {
+                                                    "has-mask": false,
+                                                    "match-type": "opendaylight-table-types:tcp_dst"
+                                                },
+                                                {
+                                                    "has-mask": false,
+                                                    "match-type": "opendaylight-table-types:icmpv4_code"
+                                                },
+                                                {
+                                                    "has-mask": true,
+                                                    "match-type": "opendaylight-table-types:ipv6_exthdr"
+                                                },
+                                                {
+                                                    "has-mask": false,
+                                                    "match-type": "opendaylight-table-types:eth_type"
+                                                },
+                                                {
+                                                    "has-mask": true,
+                                                    "match-type": "opendaylight-table-types:ipv4_dst"
+                                                },
+                                                {
+                                                    "has-mask": false,
+                                                    "match-type": "opendaylight-table-types:ip_proto"
+                                                },
+                                                {
+                                                    "has-mask": true,
+                                                    "match-type": "opendaylight-table-types:ipv6_dst"
+                                                },
+                                                {
+                                                    "has-mask": false,
+                                                    "match-type": "opendaylight-table-types:ip_ecn"
+                                                },
+                                                {
+                                                    "has-mask": true,
+                                                    "match-type": "opendaylight-table-types:arp_tpa"
+                                                },
+                                                {
+                                                    "has-mask": false,
+                                                    "match-type": "opendaylight-table-types:udp_src"
+                                                },
+                                                {
+                                                    "has-mask": false,
+                                                    "match-type": "opendaylight-table-types:udp_dst"
+                                                },
+                                                {
+                                                    "has-mask": true,
+                                                    "match-type": "opendaylight-table-types:ipv6_src"
+                                                },
+                                                {
+                                                    "has-mask": false,
+                                                    "match-type": "opendaylight-table-types:arp_op"
+                                                },
+                                                {
+                                                    "has-mask": false,
+                                                    "match-type": "opendaylight-table-types:arp_tha"
+                                                }
+                                            ]
+                                        },
+                                        "order": 8
+                                    },
+                                    {
+                                        "order": 9,
+                                        "wildcard-setfield": {
+                                            "set-field-match": [
+                                                {
+                                                    "match-type": "opendaylight-table-types:in_port"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:vlan_vid"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:ip_dscp"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:ipv6_nd_sll"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:vlan_pcp"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:ipv6_flabel"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:ipv6_nd_target"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:eth_dst"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:icmpv4_type"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:icmpv6_code"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:icmpv6_type"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:eth_src"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:arp_spa"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:ipv6_nd_tll"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:ipv4_src"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:tcp_src"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:arp_sha"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:tcp_dst"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:icmpv4_code"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:ipv6_exthdr"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:eth_type"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:ipv4_dst"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:ip_proto"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:ipv6_dst"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:ip_ecn"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:arp_tpa"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:udp_src"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:udp_dst"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:ipv6_src"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:arp_op"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:arp_tha"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "order": 10,
+                                        "write-setfield": {
+                                            "set-field-match": [
+                                                {
+                                                    "match-type": "opendaylight-table-types:vlan_vid"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:ip_dscp"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:ipv6_nd_sll"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:vlan_pcp"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:ipv6_flabel"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:ipv6_nd_target"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:eth_dst"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:icmpv4_type"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:icmpv6_code"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:icmpv6_type"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:eth_src"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:arp_spa"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:ipv6_nd_tll"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:ipv4_src"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:tcp_src"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:arp_sha"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:tcp_dst"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:icmpv4_code"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:eth_type"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:ipv4_dst"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:ip_proto"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:ipv6_dst"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:ip_ecn"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:arp_tpa"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:udp_src"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:udp_dst"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:ipv6_src"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:arp_op"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:arp_tha"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "order": 11,
+                                        "write-setfield-miss": {
+                                            "set-field-match": [
+                                                {
+                                                    "match-type": "opendaylight-table-types:vlan_vid"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:ip_dscp"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:ipv6_nd_sll"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:vlan_pcp"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:ipv6_flabel"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:ipv6_nd_target"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:eth_dst"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:icmpv4_type"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:icmpv6_code"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:icmpv6_type"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:eth_src"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:arp_spa"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:ipv6_nd_tll"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:ipv4_src"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:tcp_src"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:arp_sha"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:tcp_dst"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:icmpv4_code"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:eth_type"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:ipv4_dst"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:ip_proto"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:ipv6_dst"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:ip_ecn"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:arp_tpa"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:udp_src"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:udp_dst"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:ipv6_src"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:arp_op"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:arp_tha"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "apply-setfield": {
+                                            "set-field-match": [
+                                                {
+                                                    "match-type": "opendaylight-table-types:vlan_vid"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:ip_dscp"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:ipv6_nd_sll"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:vlan_pcp"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:ipv6_flabel"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:ipv6_nd_target"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:eth_dst"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:icmpv4_type"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:icmpv6_code"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:icmpv6_type"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:eth_src"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:arp_spa"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:ipv6_nd_tll"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:ipv4_src"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:tcp_src"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:arp_sha"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:tcp_dst"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:icmpv4_code"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:eth_type"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:ipv4_dst"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:ip_proto"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:ipv6_dst"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:ip_ecn"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:arp_tpa"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:udp_src"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:udp_dst"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:ipv6_src"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:arp_op"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:arp_tha"
+                                                }
+                                            ]
+                                        },
+                                        "order": 12
+                                    },
+                                    {
+                                        "apply-setfield-miss": {
+                                            "set-field-match": [
+                                                {
+                                                    "match-type": "opendaylight-table-types:vlan_vid"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:ip_dscp"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:ipv6_nd_sll"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:vlan_pcp"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:ipv6_flabel"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:ipv6_nd_target"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:eth_dst"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:icmpv4_type"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:icmpv6_code"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:icmpv6_type"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:eth_src"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:arp_spa"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:ipv6_nd_tll"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:ipv4_src"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:tcp_src"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:arp_sha"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:tcp_dst"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:icmpv4_code"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:eth_type"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:ipv4_dst"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:ip_proto"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:ipv6_dst"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:ip_ecn"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:arp_tpa"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:udp_src"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:udp_dst"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:ipv6_src"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:arp_op"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:arp_tha"
+                                                }
+                                            ]
+                                        },
+                                        "order": 13
+                                    },
+                                    {
+                                        "instructions": {
+                                            "instruction": [
+                                                {
+                                                    "order": 2,
+                                                    "write-actions": {}
+                                                },
+                                                {
+                                                    "order": 1,
+                                                    "write-metadata": {}
+                                                },
+                                                {
+                                                    "go-to-table": {},
+                                                    "order": 0
+                                                },
+                                                {
+                                                    "clear-actions": {},
+                                                    "order": 4
+                                                },
+                                                {
+                                                    "apply-actions": {},
+                                                    "order": 3
+                                                }
+                                            ]
+                                        },
+                                        "order": 0
+                                    },
+                                    {
+                                        "instructions-miss": {
+                                            "instruction": [
+                                                {
+                                                    "order": 2,
+                                                    "write-actions": {}
+                                                },
+                                                {
+                                                    "order": 1,
+                                                    "write-metadata": {}
+                                                },
+                                                {
+                                                    "go-to-table": {},
+                                                    "order": 0
+                                                },
+                                                {
+                                                    "clear-actions": {},
+                                                    "order": 4
+                                                },
+                                                {
+                                                    "apply-actions": {},
+                                                    "order": 3
+                                                }
+                                            ]
+                                        },
+                                        "order": 1
+                                    },
+                                    {
+                                        "order": 2,
+                                        "tables": {}
+                                    },
+                                    {
+                                        "order": 3,
+                                        "tables-miss": {}
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "flow": [
+                        {
+                            "cookie": 0,
+                            "flags": "",
+                            "hard-timeout": 0,
+                            "id": "#UF$TABLE*100-9",
+                            "idle-timeout": 0,
+                            "match": {},
+                            "opendaylight-flow-statistics:flow-statistics": {
+                                "byte-count": 0,
+                                "duration": {
+                                    "nanosecond": 198000000,
+                                    "second": 16
+                                },
+                                "packet-count": 0
+                            },
+                            "priority": 0,
+                            "table_id": 100
+                        },
+                        {
+                            "cookie": 0,
+                            "flags": "",
+                            "hard-timeout": 0,
+                            "id": "1",
+                            "idle-timeout": 0,
+                            "instructions": {
+                                "instruction": [
+                                    {
+                                        "apply-actions": {
+                                            "action": [
+                                                {
+                                                    "order": 0,
+                                                    "output-action": {
+                                                        "max-length": 60,
+                                                        "output-node-connector": "NORMAL"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "order": 0
+                                    }
+                                ]
+                            },
+                            "match": {},
+                            "opendaylight-flow-statistics:flow-statistics": {
+                                "byte-count": 0,
+                                "duration": {
+                                    "nanosecond": 846000000,
+                                    "second": 15
+                                },
+                                "packet-count": 0
+                            },
+                            "priority": 2,
+                            "table_id": 100
+                        }
+                    ],
+                    "flow-hash-id-map": [
+                        {
+                            "flow-id": "1",
+                            "hash": "Match [augmentation=[]]20"
+                        },
+                        {
+                            "flow-id": "#UF$TABLE*100-9",
+                            "hash": "Match [augmentation=[]]00"
+                        }
+                    ],
+                    "id": 100,
+                    "opendaylight-flow-table-statistics:flow-table-statistics": {
+                        "active-flows": 2,
+                        "packets-looked-up": 0,
+                        "packets-matched": 0
+                    },
+                    "table-features": [
+                        {
+                            "config": "DEPRECATED-MASK",
+                            "max-entries": 1000,
+                            "metadata-match": 0,
+                            "metadata-write": 0,
+                            "name": "Policy Table",
+                            "table-id": 100,
+                            "table-properties": {
+                                "table-feature-properties": [
+                                    {
+                                        "order": 4,
+                                        "write-actions": {}
+                                    },
+                                    {
+                                        "order": 5,
+                                        "write-actions-miss": {}
+                                    },
+                                    {
+                                        "apply-actions": {
+                                            "action": [
+                                                {
+                                                    "group-action": {},
+                                                    "order": 3
+                                                },
+                                                {
+                                                    "order": 4,
+                                                    "set-field": {}
+                                                },
+                                                {
+                                                    "order": 0,
+                                                    "output-action": {}
+                                                },
+                                                {
+                                                    "order": 1,
+                                                    "push-vlan-action": {}
+                                                },
+                                                {
+                                                    "order": 2,
+                                                    "pop-vlan-action": {}
+                                                }
+                                            ]
+                                        },
+                                        "order": 6
+                                    },
+                                    {
+                                        "apply-actions-miss": {
+                                            "action": [
+                                                {
+                                                    "order": 0,
+                                                    "output-action": {}
+                                                },
+                                                {
+                                                    "group-action": {},
+                                                    "order": 1
+                                                }
+                                            ]
+                                        },
+                                        "order": 7
+                                    },
+                                    {
+                                        "match-setfield": {
+                                            "set-field-match": [
+                                                {
+                                                    "has-mask": false,
+                                                    "match-type": "opendaylight-table-types:tcp_dst"
+                                                },
+                                                {
+                                                    "has-mask": false,
+                                                    "match-type": "opendaylight-table-types:in_port"
+                                                },
+                                                {
+                                                    "has-mask": false,
+                                                    "match-type": "opendaylight-table-types:vlan_vid"
+                                                },
+                                                {
+                                                    "has-mask": false,
+                                                    "match-type": "opendaylight-table-types:icmpv4_code"
+                                                },
+                                                {
+                                                    "has-mask": false,
+                                                    "match-type": "opendaylight-table-types:ip_dscp"
+                                                },
+                                                {
+                                                    "has-mask": false,
+                                                    "match-type": "opendaylight-table-types:eth_type"
+                                                },
+                                                {
+                                                    "has-mask": true,
+                                                    "match-type": "opendaylight-table-types:ipv4_dst"
+                                                },
+                                                {
+                                                    "has-mask": false,
+                                                    "match-type": "opendaylight-table-types:vlan_pcp"
+                                                },
+                                                {
+                                                    "has-mask": false,
+                                                    "match-type": "opendaylight-table-types:ip_proto"
+                                                },
+                                                {
+                                                    "has-mask": false,
+                                                    "match-type": "opendaylight-table-types:icmpv4_type"
+                                                },
+                                                {
+                                                    "has-mask": true,
+                                                    "match-type": "opendaylight-table-types:ipv6_dst"
+                                                },
+                                                {
+                                                    "has-mask": false,
+                                                    "match-type": "opendaylight-table-types:udp_src"
+                                                },
+                                                {
+                                                    "has-mask": false,
+                                                    "match-type": "opendaylight-table-types:eth_src"
+                                                },
+                                                {
+                                                    "has-mask": false,
+                                                    "match-type": "opendaylight-table-types:udp_dst"
+                                                },
+                                                {
+                                                    "has-mask": true,
+                                                    "match-type": "opendaylight-table-types:ipv4_src"
+                                                },
+                                                {
+                                                    "has-mask": true,
+                                                    "match-type": "opendaylight-table-types:ipv6_src"
+                                                },
+                                                {
+                                                    "has-mask": false,
+                                                    "match-type": "opendaylight-table-types:tcp_src"
+                                                }
+                                            ]
+                                        },
+                                        "order": 8
+                                    },
+                                    {
+                                        "order": 9,
+                                        "wildcard-setfield": {
+                                            "set-field-match": [
+                                                {
+                                                    "match-type": "opendaylight-table-types:tcp_dst"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:in_port"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:vlan_vid"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:icmpv4_code"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:ip_dscp"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:eth_type"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:ipv4_dst"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:vlan_pcp"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:ip_proto"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:icmpv4_type"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:ipv6_dst"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:udp_src"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:eth_src"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:udp_dst"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:ipv4_src"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:ipv6_src"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:tcp_src"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "order": 10,
+                                        "write-setfield": {}
+                                    },
+                                    {
+                                        "order": 11,
+                                        "write-setfield-miss": {}
+                                    },
+                                    {
+                                        "apply-setfield": {
+                                            "set-field-match": [
+                                                {
+                                                    "match-type": "opendaylight-table-types:vlan_vid"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:vlan_pcp"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:eth_dst"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:eth_src"
+                                                },
+                                                {
+                                                    "match-type": "opendaylight-table-types:ip_dscp"
+                                                }
+                                            ]
+                                        },
+                                        "order": 12
+                                    },
+                                    {
+                                        "apply-setfield-miss": {},
+                                        "order": 13
+                                    },
+                                    {
+                                        "instructions": {
+                                            "instruction": [
+                                                {
+                                                    "meter": {},
+                                                    "order": 2
+                                                },
+                                                {
+                                                    "apply-actions": {},
+                                                    "order": 1
+                                                },
+                                                {
+                                                    "go-to-table": {},
+                                                    "order": 0
+                                                }
+                                            ]
+                                        },
+                                        "order": 0
+                                    },
+                                    {
+                                        "instructions-miss": {
+                                            "instruction": [
+                                                {
+                                                    "meter": {},
+                                                    "order": 2
+                                                },
+                                                {
+                                                    "apply-actions": {},
+                                                    "order": 1
+                                                },
+                                                {
+                                                    "go-to-table": {},
+                                                    "order": 0
+                                                }
+                                            ]
+                                        },
+                                        "order": 1
+                                    },
+                                    {
+                                        "order": 2,
+                                        "tables": {
+                                            "table-ids": [
+                                                200
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "order": 3,
+                                        "tables-miss": {
+                                            "table-ids": [
+                                                200
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ],
+            "id": "openflow:453945595742400",
+            "node-connector": [
+                {
+                    "flow-node-inventory:advertised-features": "",
+                    "flow-node-inventory:configuration": "PORT-DOWN",
+                    "flow-node-inventory:current-feature": "",
+                    "flow-node-inventory:current-speed": 0,
+                    "flow-node-inventory:hardware-address": "9C:DC:71:FB:48:FF",
+                    "flow-node-inventory:maximum-speed": 0,
+                    "flow-node-inventory:name": "1",
+                    "flow-node-inventory:peer-features": "",
+                    "flow-node-inventory:port-number": "1",
+                    "flow-node-inventory:state": {
+                        "blocked": false,
+                        "link-down": true,
+                        "live": false
+                    },
+                    "flow-node-inventory:supported": "",
+                    "id": "openflow:453945595742400:1",
+                    "opendaylight-port-statistics:flow-capable-node-connector-statistics": {
+                        "bytes": {
+                            "received": 0,
+                            "transmitted": 0
+                        },
+                        "collision-count": 0,
+                        "duration": {
+                            "nanosecond": 349423665,
+                            "second": 51115276
+                        },
+                        "packets": {
+                            "received": 0,
+                            "transmitted": 0
+                        },
+                        "receive-crc-error": 0,
+                        "receive-drops": 0,
+                        "receive-errors": 0,
+                        "receive-frame-error": 0,
+                        "receive-over-run-error": 0,
+                        "transmit-drops": 0,
+                        "transmit-errors": 0
+                    }
+                },
+                {
+                    "flow-node-inventory:advertised-features": "",
+                    "flow-node-inventory:configuration": "PORT-DOWN",
+                    "flow-node-inventory:current-feature": "",
+                    "flow-node-inventory:current-speed": 0,
+                    "flow-node-inventory:hardware-address": "9C:DC:71:FB:48:F6",
+                    "flow-node-inventory:maximum-speed": 0,
+                    "flow-node-inventory:name": "10",
+                    "flow-node-inventory:peer-features": "",
+                    "flow-node-inventory:port-number": "10",
+                    "flow-node-inventory:state": {
+                        "blocked": false,
+                        "link-down": true,
+                        "live": false
+                    },
+                    "flow-node-inventory:supported": "",
+                    "id": "openflow:453945595742400:10",
+                    "opendaylight-port-statistics:flow-capable-node-connector-statistics": {
+                        "bytes": {
+                            "received": 0,
+                            "transmitted": 0
+                        },
+                        "collision-count": 0,
+                        "duration": {
+                            "nanosecond": 1801702961,
+                            "second": 51115276
+                        },
+                        "packets": {
+                            "received": 0,
+                            "transmitted": 0
+                        },
+                        "receive-crc-error": 0,
+                        "receive-drops": 0,
+                        "receive-errors": 0,
+                        "receive-frame-error": 0,
+                        "receive-over-run-error": 0,
+                        "transmit-drops": 0,
+                        "transmit-errors": 0
+                    }
+                },
+                {
+                    "flow-node-inventory:advertised-features": "",
+                    "flow-node-inventory:configuration": "PORT-DOWN",
+                    "flow-node-inventory:current-feature": "",
+                    "flow-node-inventory:current-speed": 0,
+                    "flow-node-inventory:hardware-address": "9C:DC:71:FB:48:FD",
+                    "flow-node-inventory:maximum-speed": 0,
+                    "flow-node-inventory:name": "3",
+                    "flow-node-inventory:peer-features": "",
+                    "flow-node-inventory:port-number": "3",
+                    "flow-node-inventory:state": {
+                        "blocked": false,
+                        "link-down": true,
+                        "live": false
+                    },
+                    "flow-node-inventory:supported": "",
+                    "id": "openflow:453945595742400:3",
+                    "opendaylight-port-statistics:flow-capable-node-connector-statistics": {
+                        "bytes": {
+                            "received": 0,
+                            "transmitted": 0
+                        },
+                        "collision-count": 0,
+                        "duration": {
+                            "nanosecond": 2096548401,
+                            "second": 51115276
+                        },
+                        "packets": {
+                            "received": 0,
+                            "transmitted": 0
+                        },
+                        "receive-crc-error": 0,
+                        "receive-drops": 0,
+                        "receive-errors": 0,
+                        "receive-frame-error": 0,
+                        "receive-over-run-error": 0,
+                        "transmit-drops": 0,
+                        "transmit-errors": 0
+                    }
+                },
+                {
+                    "flow-node-inventory:advertised-features": "",
+                    "flow-node-inventory:configuration": "PORT-DOWN",
+                    "flow-node-inventory:current-feature": "",
+                    "flow-node-inventory:current-speed": 0,
+                    "flow-node-inventory:hardware-address": "9C:DC:71:FB:48:FE",
+                    "flow-node-inventory:maximum-speed": 0,
+                    "flow-node-inventory:name": "2",
+                    "flow-node-inventory:peer-features": "",
+                    "flow-node-inventory:port-number": "2",
+                    "flow-node-inventory:state": {
+                        "blocked": false,
+                        "link-down": true,
+                        "live": false
+                    },
+                    "flow-node-inventory:supported": "",
+                    "id": "openflow:453945595742400:2",
+                    "opendaylight-port-statistics:flow-capable-node-connector-statistics": {
+                        "bytes": {
+                            "received": 0,
+                            "transmitted": 0
+                        },
+                        "collision-count": 0,
+                        "duration": {
+                            "nanosecond": 2166866993,
+                            "second": 51115276
+                        },
+                        "packets": {
+                            "received": 0,
+                            "transmitted": 0
+                        },
+                        "receive-crc-error": 0,
+                        "receive-drops": 0,
+                        "receive-errors": 0,
+                        "receive-frame-error": 0,
+                        "receive-over-run-error": 0,
+                        "transmit-drops": 0,
+                        "transmit-errors": 0
+                    }
+                },
+                {
+                    "flow-node-inventory:advertised-features": "",
+                    "flow-node-inventory:configuration": "PORT-DOWN",
+                    "flow-node-inventory:current-feature": "",
+                    "flow-node-inventory:current-speed": 0,
+                    "flow-node-inventory:hardware-address": "9C:DC:71:FB:48:F5",
+                    "flow-node-inventory:maximum-speed": 0,
+                    "flow-node-inventory:name": "11",
+                    "flow-node-inventory:peer-features": "",
+                    "flow-node-inventory:port-number": "11",
+                    "flow-node-inventory:state": {
+                        "blocked": false,
+                        "link-down": true,
+                        "live": false
+                    },
+                    "flow-node-inventory:supported": "",
+                    "id": "openflow:453945595742400:11",
+                    "opendaylight-port-statistics:flow-capable-node-connector-statistics": {
+                        "bytes": {
+                            "received": 0,
+                            "transmitted": 0
+                        },
+                        "collision-count": 0,
+                        "duration": {
+                            "nanosecond": 3096561201,
+                            "second": 51115276
+                        },
+                        "packets": {
+                            "received": 0,
+                            "transmitted": 0
+                        },
+                        "receive-crc-error": 0,
+                        "receive-drops": 0,
+                        "receive-errors": 0,
+                        "receive-frame-error": 0,
+                        "receive-over-run-error": 0,
+                        "transmit-drops": 0,
+                        "transmit-errors": 0
+                    }
+                },
+                {
+                    "flow-node-inventory:advertised-features": "",
+                    "flow-node-inventory:configuration": "PORT-DOWN",
+                    "flow-node-inventory:current-feature": "",
+                    "flow-node-inventory:current-speed": 0,
+                    "flow-node-inventory:hardware-address": "9C:DC:71:FB:48:F4",
+                    "flow-node-inventory:maximum-speed": 0,
+                    "flow-node-inventory:name": "12",
+                    "flow-node-inventory:peer-features": "",
+                    "flow-node-inventory:port-number": "12",
+                    "flow-node-inventory:state": {
+                        "blocked": false,
+                        "link-down": true,
+                        "live": false
+                    },
+                    "flow-node-inventory:supported": "",
+                    "id": "openflow:453945595742400:12",
+                    "opendaylight-port-statistics:flow-capable-node-connector-statistics": {
+                        "bytes": {
+                            "received": 0,
+                            "transmitted": 0
+                        },
+                        "collision-count": 0,
+                        "duration": {
+                            "nanosecond": 436522033,
+                            "second": 51115276
+                        },
+                        "packets": {
+                            "received": 0,
+                            "transmitted": 0
+                        },
+                        "receive-crc-error": 0,
+                        "receive-drops": 0,
+                        "receive-errors": 0,
+                        "receive-frame-error": 0,
+                        "receive-over-run-error": 0,
+                        "transmit-drops": 0,
+                        "transmit-errors": 0
+                    }
+                },
+                {
+                    "flow-node-inventory:advertised-features": "",
+                    "flow-node-inventory:configuration": "PORT-DOWN",
+                    "flow-node-inventory:current-feature": "",
+                    "flow-node-inventory:current-speed": 0,
+                    "flow-node-inventory:hardware-address": "9C:DC:71:FB:48:F7",
+                    "flow-node-inventory:maximum-speed": 0,
+                    "flow-node-inventory:name": "9",
+                    "flow-node-inventory:peer-features": "",
+                    "flow-node-inventory:port-number": "9",
+                    "flow-node-inventory:state": {
+                        "blocked": false,
+                        "link-down": true,
+                        "live": false
+                    },
+                    "flow-node-inventory:supported": "",
+                    "id": "openflow:453945595742400:9",
+                    "opendaylight-port-statistics:flow-capable-node-connector-statistics": {
+                        "bytes": {
+                            "received": 0,
+                            "transmitted": 0
+                        },
+                        "collision-count": 0,
+                        "duration": {
+                            "nanosecond": 2913980209,
+                            "second": 51115276
+                        },
+                        "packets": {
+                            "received": 0,
+                            "transmitted": 0
+                        },
+                        "receive-crc-error": 0,
+                        "receive-drops": 0,
+                        "receive-errors": 0,
+                        "receive-frame-error": 0,
+                        "receive-over-run-error": 0,
+                        "transmit-drops": 0,
+                        "transmit-errors": 0
+                    }
+                },
+                {
+                    "flow-node-inventory:advertised-features": "",
+                    "flow-node-inventory:configuration": "PORT-DOWN",
+                    "flow-node-inventory:current-feature": "",
+                    "flow-node-inventory:current-speed": 0,
+                    "flow-node-inventory:hardware-address": "9C:DC:71:FB:48:F8",
+                    "flow-node-inventory:maximum-speed": 0,
+                    "flow-node-inventory:name": "8",
+                    "flow-node-inventory:peer-features": "",
+                    "flow-node-inventory:port-number": "8",
+                    "flow-node-inventory:state": {
+                        "blocked": false,
+                        "link-down": true,
+                        "live": false
+                    },
+                    "flow-node-inventory:supported": "",
+                    "id": "openflow:453945595742400:8",
+                    "opendaylight-port-statistics:flow-capable-node-connector-statistics": {
+                        "bytes": {
+                            "received": 0,
+                            "transmitted": 0
+                        },
+                        "collision-count": 0,
+                        "duration": {
+                            "nanosecond": 3287535665,
+                            "second": 51115276
+                        },
+                        "packets": {
+                            "received": 0,
+                            "transmitted": 0
+                        },
+                        "receive-crc-error": 0,
+                        "receive-drops": 0,
+                        "receive-errors": 0,
+                        "receive-frame-error": 0,
+                        "receive-over-run-error": 0,
+                        "transmit-drops": 0,
+                        "transmit-errors": 0
+                    }
+                },
+                {
+                    "flow-node-inventory:advertised-features": "",
+                    "flow-node-inventory:configuration": "",
+                    "flow-node-inventory:current-feature": "",
+                    "flow-node-inventory:current-speed": 0,
+                    "flow-node-inventory:hardware-address": "9C:DC:71:FB:48:C0",
+                    "flow-node-inventory:maximum-speed": 0,
+                    "flow-node-inventory:name": "local",
+                    "flow-node-inventory:peer-features": "",
+                    "flow-node-inventory:port-number": "LOCAL",
+                    "flow-node-inventory:state": {
+                        "blocked": false,
+                        "link-down": false,
+                        "live": false
+                    },
+                    "flow-node-inventory:supported": "",
+                    "id": "openflow:453945595742400:LOCAL",
+                    "opendaylight-port-statistics:flow-capable-node-connector-statistics": {
+                        "bytes": {
+                            "received": 0,
+                            "transmitted": 0
+                        },
+                        "collision-count": 0,
+                        "duration": {
+                            "nanosecond": 810078513,
+                            "second": 51115276
+                        },
+                        "packets": {
+                            "received": 0,
+                            "transmitted": 0
+                        },
+                        "receive-crc-error": 0,
+                        "receive-drops": 0,
+                        "receive-errors": 0,
+                        "receive-frame-error": 0,
+                        "receive-over-run-error": 0,
+                        "transmit-drops": 0,
+                        "transmit-errors": 0
+                    }
+                },
+                {
+                    "flow-node-inventory:advertised-features": "",
+                    "flow-node-inventory:configuration": "PORT-DOWN",
+                    "flow-node-inventory:current-feature": "",
+                    "flow-node-inventory:current-speed": 0,
+                    "flow-node-inventory:hardware-address": "9C:DC:71:FB:48:FB",
+                    "flow-node-inventory:maximum-speed": 0,
+                    "flow-node-inventory:name": "5",
+                    "flow-node-inventory:peer-features": "",
+                    "flow-node-inventory:port-number": "5",
+                    "flow-node-inventory:state": {
+                        "blocked": false,
+                        "link-down": true,
+                        "live": false
+                    },
+                    "flow-node-inventory:supported": "",
+                    "id": "openflow:453945595742400:5",
+                    "opendaylight-port-statistics:flow-capable-node-connector-statistics": {
+                        "bytes": {
+                            "received": 0,
+                            "transmitted": 0
+                        },
+                        "collision-count": 0,
+                        "duration": {
+                            "nanosecond": 158450993,
+                            "second": 51115276
+                        },
+                        "packets": {
+                            "received": 0,
+                            "transmitted": 0
+                        },
+                        "receive-crc-error": 0,
+                        "receive-drops": 0,
+                        "receive-errors": 0,
+                        "receive-frame-error": 0,
+                        "receive-over-run-error": 0,
+                        "transmit-drops": 0,
+                        "transmit-errors": 0
+                    }
+                },
+                {
+                    "flow-node-inventory:advertised-features": "",
+                    "flow-node-inventory:configuration": "PORT-DOWN",
+                    "flow-node-inventory:current-feature": "",
+                    "flow-node-inventory:current-speed": 0,
+                    "flow-node-inventory:hardware-address": "9C:DC:71:FB:48:FC",
+                    "flow-node-inventory:maximum-speed": 0,
+                    "flow-node-inventory:name": "4",
+                    "flow-node-inventory:peer-features": "",
+                    "flow-node-inventory:port-number": "4",
+                    "flow-node-inventory:state": {
+                        "blocked": false,
+                        "link-down": true,
+                        "live": false
+                    },
+                    "flow-node-inventory:supported": "",
+                    "id": "openflow:453945595742400:4",
+                    "opendaylight-port-statistics:flow-capable-node-connector-statistics": {
+                        "bytes": {
+                            "received": 0,
+                            "transmitted": 0
+                        },
+                        "collision-count": 0,
+                        "duration": {
+                            "nanosecond": 2548812081,
+                            "second": 51115276
+                        },
+                        "packets": {
+                            "received": 0,
+                            "transmitted": 0
+                        },
+                        "receive-crc-error": 0,
+                        "receive-drops": 0,
+                        "receive-errors": 0,
+                        "receive-frame-error": 0,
+                        "receive-over-run-error": 0,
+                        "transmit-drops": 0,
+                        "transmit-errors": 0
+                    }
+                },
+                {
+                    "flow-node-inventory:advertised-features": "",
+                    "flow-node-inventory:configuration": "PORT-DOWN",
+                    "flow-node-inventory:current-feature": "",
+                    "flow-node-inventory:current-speed": 0,
+                    "flow-node-inventory:hardware-address": "9C:DC:71:FB:48:F9",
+                    "flow-node-inventory:maximum-speed": 0,
+                    "flow-node-inventory:name": "7",
+                    "flow-node-inventory:peer-features": "",
+                    "flow-node-inventory:port-number": "7",
+                    "flow-node-inventory:state": {
+                        "blocked": false,
+                        "link-down": true,
+                        "live": false
+                    },
+                    "flow-node-inventory:supported": "",
+                    "id": "openflow:453945595742400:7",
+                    "opendaylight-port-statistics:flow-capable-node-connector-statistics": {
+                        "bytes": {
+                            "received": 0,
+                            "transmitted": 0
+                        },
+                        "collision-count": 0,
+                        "duration": {
+                            "nanosecond": 1270728497,
+                            "second": 51115276
+                        },
+                        "packets": {
+                            "received": 0,
+                            "transmitted": 0
+                        },
+                        "receive-crc-error": 0,
+                        "receive-drops": 0,
+                        "receive-errors": 0,
+                        "receive-frame-error": 0,
+                        "receive-over-run-error": 0,
+                        "transmit-drops": 0,
+                        "transmit-errors": 0
+                    }
+                },
+                {
+                    "flow-node-inventory:advertised-features": "",
+                    "flow-node-inventory:configuration": "PORT-DOWN",
+                    "flow-node-inventory:current-feature": "",
+                    "flow-node-inventory:current-speed": 0,
+                    "flow-node-inventory:hardware-address": "9C:DC:71:FB:48:FA",
+                    "flow-node-inventory:maximum-speed": 0,
+                    "flow-node-inventory:name": "6",
+                    "flow-node-inventory:peer-features": "",
+                    "flow-node-inventory:port-number": "6",
+                    "flow-node-inventory:state": {
+                        "blocked": false,
+                        "link-down": true,
+                        "live": false
+                    },
+                    "flow-node-inventory:supported": "",
+                    "id": "openflow:453945595742400:6",
+                    "opendaylight-port-statistics:flow-capable-node-connector-statistics": {
+                        "bytes": {
+                            "received": 0,
+                            "transmitted": 0
+                        },
+                        "collision-count": 0,
+                        "duration": {
+                            "nanosecond": 2619133233,
+                            "second": 51115276
+                        },
+                        "packets": {
+                            "received": 0,
+                            "transmitted": 0
+                        },
+                        "receive-crc-error": 0,
+                        "receive-drops": 0,
+                        "receive-errors": 0,
+                        "receive-frame-error": 0,
+                        "receive-over-run-error": 0,
+                        "transmit-drops": 0,
+                        "transmit-errors": 0
+                    }
+                }
+            ],
+            "opendaylight-group-statistics:group-features": {
+                "actions": [
+                    58726401
+                ],
+                "group-capabilities-supported": [
+                    "opendaylight-group-types:select-liveness"
+                ],
+                "group-types-supported": [
+                    "opendaylight-group-types:group-indirect",
+                    "opendaylight-group-types:group-ff",
+                    "opendaylight-group-types:group-select",
+                    "opendaylight-group-types:group-all"
+                ],
+                "max-groups": [
+                    1024
+                ]
+            },
+            "opendaylight-meter-statistics:meter-features": {
+                "max_bands": 2,
+                "max_color": 8,
+                "max_meter": 126,
+                "meter-band-supported": [
+                    "opendaylight-meter-types:meter-band-drop",
+                    "opendaylight-meter-types:meter-band-dscp-remark"
+                ],
+                "meter-capabilities-supported": [
+                    "opendaylight-meter-types:meter-pktps",
+                    "opendaylight-meter-types:meter-stats",
+                    "opendaylight-meter-types:meter-kbps"
+                ]
+            }
+        }
+    ]
+}
